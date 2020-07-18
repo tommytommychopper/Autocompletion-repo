@@ -1,6 +1,6 @@
 # Autocompletion Project
 
-![alt text](Autocomple_xxample.png)
+![](images/autocomplete-ex.png)
 
 ## Description 
 
