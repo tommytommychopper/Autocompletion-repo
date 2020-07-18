@@ -1,6 +1,6 @@
 # Autocompletion Project
 
-<img src="images/autocomplete-ex.png" width=200, height=200>
+<img src="images/autocomplete_ex.png" width=200, height=200>
 
 ## Description 
 
