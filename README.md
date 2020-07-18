@@ -1,6 +1,6 @@
 # Autocompletion Project
 
-![](images/autocomplete-ex.png)
+<img src="images/autocomplete-ex.png" width=200, height=200>
 
 ## Description 
 
