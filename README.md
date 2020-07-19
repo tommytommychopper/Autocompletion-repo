@@ -31,11 +31,14 @@ will be used to find commonly used words in BST
 The integer 3 here means that the prefix length is 3
 
 flag is an integer that can take value 0 or 1 or 2. 
-	1. If flag is 0, do not do anything.
-    2. If flag is 1, then call heightPrint function and after that print out endl.
-    3. if flag is 2, then open the second input file, and while there is input, use each word as a key to find all words that start with this key in BST; i.e. call findPrint function
+- If flag is 0, do not do anything.
+- If flag is 1, then call heightPrint function and after that print out endl.
+- If flag is 2, then open the second input file, and while there is input, use each word as a key to find all words that start with this key in BST; i.e. call findPrint function
 
 ## Expected Result
+
+
+
 
 
 
