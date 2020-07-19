@@ -11,34 +11,37 @@ using namespace std;
 #include "bst.h"
 
 int main(int argc, char* argv[]){
-
-    ifstream in;
-    in.open(argv[1]);
-    int i = 0;  
-	BST numbers;
-	string x;
-	in >> x;
-	int len = atoi(argv[3]);
-    while(!in.eof()){
-	if((int)x.length() >= len){
-	numbers.insert(x.substr(0,len), x);
-     }
-		i++;
-		in >> x;
-    }//while
-	in.close(); in.clear();
-  	numbers.print_inorder();
-	cout << endl;
-	numbers.heightPrint();
-	cout << endl;
-    numbers.printBF();
-	cout << endl;
-	in.open(argv[2]); 
-	in >> x;
-	while(!in.eof()){
-		numbers.findPrint(x);
-		in >> x;
-	}
-	in.close(); in.clear();
+    BST numbers;
+	string command;
+	while(cin >> command){//
+		if(command == "print_inorder"){
+			numbers.print_inorder();
+			cout << endl;
+		}else if(command == "heightPrint"){
+			numbers.heightPrint();
+			cout << endl;
+		}else if(command == "printBF"){
+			numbers.printBF();
+			cout << endl;
+		}
+		else if(command == "findPrint"){
+			string akey;
+			cin >> akey;
+			numbers.findPrint(akey);
+		}else if(command == "insert"){
+			string word;
+			cin >> word;
+			int len ;
+			cin >> len;
+			string akey = word.substr(0, len);
+			numbers.insert(akey, word);
+		}else if(command == "remove"){
+			string akey;
+			cin >> akey;
+			numbers.remove(akey);
+		}else{
+			cerr << "ERROR: command " << command << " is not found." << endl;
+		}
+	}//while
     return 0;
 }//main()
