@@ -6,13 +6,12 @@ using namespace std;
 #define BST_H
 
 class BST{
-        public:
-                BST():  root(NULL) {};
-                ~BST(){ clean(root); root = NULL; };
-                
-				void insert(string akey, string aval){
-					if(root == NULL){
-						root = new Tnode(akey, aval);
+	  public:
+    	  BST():  root(NULL) {};
+        ~BST(){ clean(root); root = NULL; };    
+		    void insert(string akey, string aval){
+			  if(root == NULL){
+			  root = new Tnode(akey, aval);
 						return;
 					}
 					root = insert(root, akey, aval);
