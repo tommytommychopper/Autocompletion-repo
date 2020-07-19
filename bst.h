@@ -5,7 +5,7 @@ using namespace std;
 #ifndef BST_H
 #define BST_H
 
-//Make your indent size change to 4.
+//Make your indent size change to 4 on github
 class BST{
     public:
     	BST():  root(NULL) {};
