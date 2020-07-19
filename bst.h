@@ -38,21 +38,21 @@ class BST{
 		void remove(string akey){
             root = remove(root, akey);
         }
-		private:
-			void heightPrint(Tnode *cur);
-			Tnode* insert(Tnode *cur, string akey, string aval);
-			void print_inorder(Tnode *cur);
-			Tnode *root = NULL;
-			void clean(Tnode* cur);
-			Tnode* copy(Tnode* cur);
-			void findPrint(Tnode* cur, string key);
-			void printBF(Tnode *cur);
-			Tnode* restoreBalance(Tnode *cur);
-			Tnode* rightRotation(Tnode *cur);
-			Tnode* left_rightRotation(Tnode *cur);
-			Tnode* leftRotation(Tnode *cur);
-			Tnode* right_leftRotation(Tnode *cur);
-			Tnode* getLeftmost(Tnode *cur);
-			Tnode* remove(Tnode *cur, string akey);
+	private:
+		void heightPrint(Tnode *cur);
+		Tnode* insert(Tnode *cur, string akey, string aval);
+		void print_inorder(Tnode *cur);
+		Tnode *root = NULL;
+		void clean(Tnode* cur);
+		Tnode* copy(Tnode* cur);
+		void findPrint(Tnode* cur, string key);
+		void printBF(Tnode *cur);
+		Tnode* restoreBalance(Tnode *cur);
+		Tnode* rightRotation(Tnode *cur);
+		Tnode* left_rightRotation(Tnode *cur);
+		Tnode* leftRotation(Tnode *cur);
+		Tnode* right_leftRotation(Tnode *cur);
+		Tnode* getLeftmost(Tnode *cur);
+		Tnode* remove(Tnode *cur, string akey);
 };
 #endif
