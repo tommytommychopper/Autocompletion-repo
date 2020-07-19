@@ -37,7 +37,7 @@ ex) t01.in
 ex) t01.out 
 
 
-<img src="images/screenshot_t01.out.png" width=500, height=200>
+<img src="images/screenshot_t01.out.png" width=900, height=400>
 
 
 ## Technologies
