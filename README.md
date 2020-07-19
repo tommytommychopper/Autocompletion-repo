@@ -30,7 +30,11 @@ ex)
 diff t01.my tests/t01.out
 
 ## Expected Result
-<img src="images/autocomplete_ex.png" width=350, height=300>
+ex) t01.in 
+<img src="images/screenshot_t01.in.png" width=350, height=300>
+
+Expected Result 
+<img src="images/screenshot_t01.out.png" width=350, height=300>
 
 
 ## Technologies
