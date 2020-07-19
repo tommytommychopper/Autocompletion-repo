@@ -30,6 +30,9 @@ ex)
 diff t01.my tests/t01.out
 
 ## Expected Result
+ex) t01.in 
+
+
 <img src="images/screenshot_t01.in.png" width=350, height=600>
 
 <img src="images/screenshot_t01.out.png" width=800, height=200>
