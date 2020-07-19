@@ -35,6 +35,9 @@ ex) t01.in
 
 <img src="images/screenshot_t01.in.png" width=350, height=600>
 
+ex) t01.out 
+
+
 <img src="images/screenshot_t01.out.png" width=800, height=200>
 
 
