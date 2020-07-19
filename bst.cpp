@@ -177,3 +177,57 @@ Tnode* BST::insert(Tnode *cur, string akey, string aval){
 	}
 	return cur;
 }//insert
+
+Tnode* BST::getLeftmost(Tnode *cur){                                                                                                                          
+        if(cur != NULL){                                                                                                                                      
+                if(cur->left != NULL)                                                                                                                         
+                        return getLeftmost(cur->left);                                                                                                        
+                else                                                                                                                                          
+                        return cur;                                                                                                                           
+        }                                                                      
+        return NULL;                                                           
+} //getLeftmost  
+
+Tnode* BST::remove(Tnode* cur, string akey){
+        if(!cur){ return cur; }
+        if(cur->key == akey){
+                if(!cur->left && !cur->right){
+                        delete cur;
+                        cur =  NULL;
+                }
+                else if(!cur->left || !cur->right){
+                        Tnode* temp = cur->left;
+                        if(!cur->left)
+                                temp = cur->right;
+                        delete cur;
+                        cur = temp;
+                }
+                else
+                {
+                        Tnode* temp = getLeftmost(cur->right);
+                        cur->key = temp->key;
+                        cur->value = temp->value;
+                        cur->right = remove(cur->right, temp->key);                                                                                           
+                    int bf = balanceFactor(cur);
+                        if(bf < -1 || bf > 1)
+                                cur = restoreBalance(cur);
+                    updateHeight(cur);
+                }
+        }
+        else if(cur->key > akey){
+                cur->left = remove(cur->left, akey);
+                int bf = balanceFactor(cur);
+                if(bf < -1 || bf > 1)
+                        cur = restoreBalance(cur);
+                updateHeight(cur);
+        }
+        else if(cur->key < akey){
+                cur->right = remove(cur->right, akey);
+                int bf = balanceFactor(cur);
+                if(bf < -1 || bf > 1)
+                        cur = restoreBalance(cur);
+                updateHeight(cur);
+        }
+        return cur;
+}//remove
+
