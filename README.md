@@ -4,7 +4,7 @@
 
 ## Description 
 
-I used binary Search Tree to implement smartphone’s feature that autocompletes words. 
+I used Balanced Binary Search Tree to implement smartphone’s feature that autocompletes words. 
 
 Makefile -- use 'make' command to compile these four files and create excutable file called 'run'	
 
@@ -15,23 +15,22 @@ tnode.h
 
 ## How to run 
 
-./run text1.txt acronym1.txt 3 flag
+There are six commands user allows to use.
+- print_inorder 
+- heightPrint
+- printBF
+- findPrint
+- insert
+- remove
 
-text1.txt contains all commonly used words in a dictionary 
+I created "tests" folder to test the program 
 
-acronym1.txt contains prefixes (the beginning of words, or keys) that
-will be used to find commonly used words in BST
-
-The integer 3 here means that the prefix length is 3
-
-flag is an integer that can take value 0 or 1 or 2. 
-- If flag is 0, do not do anything.
-- If flag is 1, then call heightPrint function and after that print out endl.
-- If flag is 2, then open the second input file, and while there is input, use each word as a key to find all words that start with this key in BST; i.e. call findPrint function
+ex)
+./run < tests/t01.in > t01.my
+diff t01.my tests/t01.out
 
 ## Expected Result
-
-
+<img src="images/autocomplete_ex.png" width=350, height=300>
 
 
 ## Technologies
