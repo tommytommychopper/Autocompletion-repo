@@ -32,12 +32,12 @@ diff t01.my tests/t01.out
 ex) t01.in 
 
 
-<img src="images/screenshot_t01.in.png" width=350, height=600>
+<img src="images/screenshot_t01.in.png">
 
 ex) t01.out 
 
 
-<img src="images/screenshot_t01.out.png" width=900, height=400>
+<img src="images/screenshot_t01.out.png">
 
 
 ## Technologies
