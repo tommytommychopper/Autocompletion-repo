@@ -36,6 +36,9 @@ class BST{
 						printBF(root);
 					cout << endl;
 				}
+				void remove(string akey){
+            root = remove(root, akey);
+        }
 		private:
 				void heightPrint(Tnode *cur);
 				Tnode* insert(Tnode *cur, string akey, string aval);
@@ -50,6 +53,7 @@ class BST{
 				Tnode* left_rightRotation(Tnode *cur);
 				Tnode* leftRotation(Tnode *cur);
 				Tnode* right_leftRotation(Tnode *cur);
+				Tnode* getLeftmost(Tnode *cur);
+        Tnode* remove(Tnode *cur, string akey);
 };
-
 #endif
