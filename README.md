@@ -6,15 +6,6 @@
 
 I used Balanced Binary Search Tree to implement smartphone’s feature that autocompletes words. 
 
-Makefile -- use 'make' command to compile these four files and create excutable file called 'run'	
-
-main.cpp </br>
-bst.h </br>
-bst.cpp </br>
-tnode.h </br>
-
-## How to run 
-
 There are six commands user allows to use.
 - print_inorder 
 - heightPrint
@@ -22,6 +13,14 @@ There are six commands user allows to use.
 - findPrint
 - insert
 - remove
+
+## How to run 
+Makefile -- use 'make' command to compile these four files and create excutable file called 'run'	
+
+main.cpp </br>
+bst.h </br>
+bst.cpp </br>
+tnode.h </br>
 
 I created "tests" folder to test the program 
 
