@@ -6,7 +6,7 @@ using namespace std;
 #define BST_H
 
 class BST{
-	  public:
+    public:
     	  BST():  root(NULL) {};
         ~BST(){ clean(root); root = NULL; };    
 		    void insert(string akey, string aval){
