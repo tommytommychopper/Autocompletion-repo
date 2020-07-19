@@ -5,4 +5,4 @@ bst.o: bst.cpp bst.h  tnode.h
 main.o: main.cpp  bst.h 
 	g++ -c -Wall -pedantic -g -std=c++11 main.cpp
 clean: 
-	rm main.o bst.o student.o run
+	rm main.o bst.o run
