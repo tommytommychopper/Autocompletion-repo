@@ -8,17 +8,17 @@ I used Balanced Binary Search Tree to implement smartphone’s feature that auto
 
 Makefile -- use 'make' command to compile these four files and create excutable file called 'run'	
 
-main.cpp 
-bst.h 
-bst.cpp
-tnode.h 
+main.cpp </br>
+bst.h </br>
+bst.cpp </br>
+tnode.h </br>
 
 ## How to run 
 
 There are six commands user allows to use.
 - print_inorder 
 - heightPrint
-- printBF
+- printBF (BF stands for balance factor)
 - findPrint
 - insert
 - remove
