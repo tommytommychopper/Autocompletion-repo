@@ -12,17 +12,17 @@ using namespace std;
 
 int main(int argc, char* argv[]){
 
-	ifstream in;
-	in.open(argv[1]);
-	int i = 0;
-    BST numbers;
+    ifstream in;
+    in.open(argv[1]);
+    int i = 0;  
+	BST numbers;
 	string x;
 	in >> x;
 	int len = atoi(argv[3]);
     while(!in.eof()){
-		if((int)x.length() >= len){
-			numbers.insert(x.substr(0,len), x);
-		}
+	if((int)x.length() >= len){
+	numbers.insert(x.substr(0,len), x);
+     }
 		i++;
 		in >> x;
     }//while
