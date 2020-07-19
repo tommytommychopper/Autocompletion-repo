@@ -6,18 +6,12 @@
 
 I used binary Search Tree to implement smartphone’s feature that autocompletes words. 
 
+Makefile -- use 'make' command to compile these four files and create excutable file called 'run'	
 
-
-
-main.cpp -- process command line arguments
-	
+main.cpp 
 bst.h 
-bst.cpp -- All the operation
-
-tnode.h -- This file is for binary search tree.
-
-
-Makefile -- use 'make' command to compile the source files and create excutable file called 'run'	
+bst.cpp
+tnode.h 
 
 ## How to run 
 
@@ -36,9 +30,6 @@ flag is an integer that can take value 0 or 1 or 2.
 - If flag is 2, then open the second input file, and while there is input, use each word as a key to find all words that start with this key in BST; i.e. call findPrint function
 
 ## Expected Result
-
-
-
 
 
 
